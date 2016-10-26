@@ -1,0 +1,41 @@
+ul,li{
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+#topRow{
+
+  padding-top: 45px;
+
+}
+
+#toast{
+  display: none;
+}
+
+input[type="checkbox"]{
+
+  margin-right: 10px;
+
+
+}
+
+#burger{
+
+  margin-right: 10px;
+}
+
+#done{
+
+
+}
+
+.canSee{
+
+  display: initial!important;}
+
+  #toaster{
+    display: none;
+
+  }

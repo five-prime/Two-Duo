@@ -1,3 +1,14 @@
+<!---
+TODO: Add app drawer
+TODO: Add navigation
+TODO: Add styles
+TODO: Add graphics
+TODO: Add material design framework
+TODO: name
+TODO: add to portfolio page
+TODO: Github integration
+--->
+
 <!doctype HTML>
 
 <html>
@@ -9,16 +20,111 @@
     <title>5ive Prime Design | Home</title>
 
     <!---
+    CSS reset
+    --->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+
+    <!---
     Local Imports
     --->
-    <link href="styles/styles.css" rel="stylesheet/css">
+    <link  rel="stylesheet" type="text/css" href="styles/styles.css"/>
 
     <script src="scripts/scripts.js"></script>
+
+    <!---
+    Libraries, jQuery first
+    --->
+    <script src="scripts/jquery.311.dev.js"></script>
+
+    <!---
+    Foundation
+    --->
+    <!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+
+
 
   </head>
 
   <body>
-    <h2>Hello</h2>
+
+    <!---
+    Zurb default title bar with hamburger
+    --->
+
+    <div class="title-bar">
+
+      <div class="title-bar-left">
+
+        <button id = "burger" class="menu-icon" type="button"></button>
+
+        <span class="title-bar-title">To Do List</span>
+
+      </div>
+
+    </div>
+
+    <!---
+    callout declaring item done
+    --->
+
+
+    <div id="toaster" class="success callout" data-closable>
+      <h3><p id="done" class="text-center"></p></h3>
+
+    <!---
+    Close button
+    --->
+
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+
+        <span aria-hidden="true">&times;</span>
+
+      </button>
+    </div>
+
+
+
+        <!---
+        Callout declaring blank input
+        TODO: callout fadeout
+        --->
+
+    <div id="toast" class="alert callout" data-closable>
+
+      <h3 class="text-center">Please enter an item for the list</h3>
+
+    <!---
+    Close button
+    --->
+
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+
+        <span aria-hidden="true">&times;</span>
+
+      </button>
+</div>
+<div class="row" id="topRow">
+   <div class="small-9 columns"><input type="text" id ="userInput"></div>
+
+   <div class="small-3 columns">
+      <button class="button float-center" type = "button" onClick = checkbox() id="sendIt">Add Task</button>
+</div>
+</div> <!--- ./topRow --->
+
+
+<!---
+List Header
+--->
+
+<div class="row">
+    <div class="small-12 columns"> <h2 class="text-center">To Do:</h2>
+
+    <div id = "demo"><ul id ="myList"></ul>
+
   </body>
 
 
