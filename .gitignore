@@ -1,3 +1,4 @@
 #Ignore .dev directory
 /.dev/**
 firebase.json
+.firebaserc
